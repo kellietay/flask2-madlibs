@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+  <title>Hi There!</title>
+</head>
+<body>
+
+<h1>Hi There {{ player }}!</h1>
+
+<form action="/madlib" method="POST">
+  Madlibs!
+  <br>Person: <input type="text" name="person">
+  <br>Color: <select name="color">
+  	<option value = "red">Red</option>
+  	<option value = "blue">Blue</option>
+  	<option value = "green">Green</option>
+  	<option value = "black">Black</option>
+  </select>
+  <br>Noun: <input type="text" name="noun">
+  <br>Adjective: <input type="text" name="adjective">
+  <br>Checkbox:
+  <input type="checkbox" name="box" value="potato">Potato
+  <input type="checkbox" name="box" value="squash">squash
+  <input type="checkbox" name="box" value="soup">soup
+  <input type="checkbox" name="box" value="burgers">burgers
+
+  <br><input type="submit">
+
+</form>
+
+</body>
+</html>
